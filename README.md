@@ -4,7 +4,7 @@
 
 * Всички задачи се предават като линк към github проект
 * Кодът да следва Android style guidelines (https://google.github.io/styleguide/javaguide.html)
-* Към проектите да бъдат включени тестове (unit и функционални)
+* Към проектите да бъдат включени тестове (unit и функционални). Espresso (https://developer.android.com/training/testing/espresso/index.html)
 * Кодът ще бъде проверяван за плагиатсво
 * Използването на Dependency injection (Dagger2 - https://github.com/google/dagger) и View bindings (Butter knife - http://jakewharton.github.io/butterknife/) ще се поощрява
 * Препоръчва се използването на Java 8 (вместо базовия Java 6) синтаксис и механизми : lambdas, method references, type annotations и т.н.
