@@ -11,16 +11,25 @@
 
 ## Упражнения
 
-1. Да се разработи приложение, което зарежда растерен графичен файл от URL и го прилага на ImageView. Да се използва Picasso (https://github.com/square/picasso). *Bonus:* да се реализира Callback известяващ при зараждане на графичния файл (успешно и неуспешно).
+### 1. Структура на андроид проект. Структура на AndroidManifest и gradle. Включване на външни библиотеки.
+   Да се разработи приложение, което зарежда растерен графичен файл от URL и го прилага на ImageView. Да се използва Picasso (https://github.com/square/picasso). *Bonus:* да се реализира Callback известяващ при зараждане на графичния файл (успешно и неуспешно).
 
-2. Да се реализира приложение, в което в първо activity се въвежда информация за PhoneBookEntry (name, phone, type). Създава се PhoneBookEntry, което сериализирано се подава чрез intent на второ activity. Второто activity визуализира PhoneBookEntry-то. *Bonus:* Да се имплементира Parcelable interface, който да се използва в intenta, вместо сериализация.
+### 2. Андроид activity клас, намерения (Intent-и). Предаване на параметри чрез намерения.
+Да се реализира приложение, в което в първо activity се въвежда информация за PhoneBookEntry (name, phone, type). Създава се PhoneBookEntry, което сериализирано се подава чрез intent на второ activity. Второто activity визуализира PhoneBookEntry-то. *Bonus:* Да се имплементира Parcelable interface, който да се използва в intenta, вместо сериализация.
 
-3. 
-   Да се създаде абстрактен клас **BaseActivity**, с private member TextView **logTextView**. Нека BaseActivity наследи (Override) всички lifecycle методите на Activity (onStart(), onResume(), etc) и за всеки от тях логва текущата команда едновременно в logcat(Log.d) и в logTextView (hint: използвайте append()).
+### 3. Lifecycle на андроид activity. Стартиране на активити за резултат. Използване на log и debug-ер. 
+Да се създаде абстрактен клас **BaseActivity**, с private член TextView **logTextView**. Нека BaseActivity наследи (Override) всички lifecycle методите на Activity (onStart(), onResume(), etc) и за всеки от тях логва текущата команда едновременно в logcat(Log.d) и в logTextView (hint: използвайте append()).
 
-   Да се създадат две активитита **MainActivity** и **SecondActivity**, които наследяват BaseActivity (hint: погрижете се за инстанцирането на logTextView и разрешето скролирането му – *android:scrollbars = "vertical"*). Създайте аналогични lifecycle методи и за двете (hint: не забравяйте super call). 
+Да се създадат две активитита **MainActivity** и **SecondActivity**, които наследяват BaseActivity (hint: погрижете се за инстанцирането на logTextView и разрешето скролирането му – *android:scrollbars = "vertical"*). Създайте аналогични lifecycle методи и за двете (hint: не забравяйте super call). 
 
-Да се създадат следните *layouts* съответно за MainActivity и SecondActivity.
+**Да се създадат следните *layouts* съответно за MainActivity и SecondActivity.**
+
+   ![layouts](https://github.com/tllw/pmiu/blob/master/exercise3/activities.png)
+   
+   * Нека бутонът *Start Second For Result* стартира второто активити за резултат.
+   * Нека бутонът *Return* връща като резултат стойността NumberResult.
+   * Нека бутонът *Finish* финишира второто активити. 
+   * Нека всички изпълнени команди (включая startActivityForResult и резултата) се логват с подходящ текст в *logTextView* и в *logcat*.
 
 ## Курсови задачи
 
