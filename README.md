@@ -13,9 +13,13 @@
 
 ### 1. Структура на андроид проект. Структура на AndroidManifest и gradle. Включване на външни библиотеки.
    Да се разработи приложение, което зарежда растерен графичен файл от URL и го прилага на ImageView. Да се използва Picasso (https://github.com/square/picasso). *Bonus:* да се реализира Callback известяващ при зараждане на графичния файл (успешно и неуспешно).
+   
+---
 
 ### 2. Андроид activity клас, намерения (Intent-и). Предаване на параметри чрез намерения.
 Да се реализира приложение, в което в първо activity се въвежда информация за PhoneBookEntry (name, phone, type). Създава се PhoneBookEntry, което сериализирано се подава чрез intent на второ activity. Второто activity визуализира PhoneBookEntry-то. *Bonus:* Да се имплементира Parcelable interface, който да се използва в intenta, вместо сериализация.
+
+---
 
 ### 3. Lifecycle на андроид activity. Стартиране на активити за резултат. Използване на log и debug-ер. 
 Да се създаде абстрактен клас **BaseActivity**, с protected член TextView **logTextView**. Нека BaseActivity наследи (Override) всички lifecycle методите на Activity (onStart(), onResume(), etc) и за всеки от тях логва текущата команда едновременно в logcat(Log.d) и в logTextView (hint: използвайте append()).
@@ -30,6 +34,8 @@
    * Нека бутонът *Return* връща като резултат стойността NumberResult.
    * Нека бутонът *Finish* финишира второто активити. 
    * Нека всички изпълнени команди (включая startActivityForResult и резултата) се логват с подходящ текст в *logTextView* и в *logcat*.
+   
+---
    
 ### 4. Събития (Event listeners). Navigation drawer menu. 
 **4.A** Да се създаде приложение със странична *Navigation drawer* навигация. Нека приложението има две activity-та, като в navigation drawer менюто има връзки към двете активитита (*hint: иползвайте базов активити клас за обработката на onOptionsItemSelected*).
