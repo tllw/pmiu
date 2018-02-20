@@ -1,15 +1,4 @@
-# PMIU (Android) упражнения и задачи
-
-## Изисквания и препоръки
-
-* Всички задачи се предават като линк към github проект
-* Кодът да следва Android style guidelines (https://google.github.io/styleguide/javaguide.html)
-* Към проектите да бъдат включени тестове (unit и функционални). Espresso (https://developer.android.com/training/testing/espresso/index.html)
-* Кодът ще бъде проверяван за плагиатсво
-* Използването на Dependency injection (Dagger2 - https://github.com/google/dagger) и View bindings (Butter knife - http://jakewharton.github.io/butterknife/) ще се поощрява
-* Препоръчва се използването на Java 8 (вместо базовия Java 6) синтаксис и механизми : lambdas, method references, type annotations и т.н.
-
-## Упражнения
+# PMIU (Android) упражнения
 
 ### 1. Структура на андроид проект. Структура на AndroidManifest и gradle. Включване на външни библиотеки.
    Да се разработи приложение, което зарежда растерен графичен файл от URL и го прилага на ImageView. Да се използва Picasso (https://github.com/square/picasso). *Bonus:* да се реализира Callback известяващ при зараждане на графичния файл (успешно и неуспешно).
@@ -46,7 +35,7 @@
 
 *Bonus:* нека всички OnXXXListeners се заменят с Java 8 lambda functions. 
 
-## Курсови задачи
+# Курсови задачи
 
 1.	Да се реализира приложение "Прогноза за времето", което при въведена локация да визуализира в подходящ стил прогноза на времето. Програмата да действа като асинхронен **REST** клиент на HTTP API. За реализация на заявките и десериализация на JSON да се използва **Retrofit** (https://github.com/square/retrofit). 
 
@@ -59,3 +48,14 @@
 5.	Да се реализира програма "GPS локатор", в която **background service** переодично проверява текущото разстояние до зададен обект (дефиниран от GPS координати, например 43.2228918, 27.9345786) и уведомява **activity**, което го показва на потребителя. Да се реализира функционалност, която позволява имплицитно опресняване на разстоянието. 
 
 6.	Да се проектира **CRUD** to-do приложение. Като всички UI функционалности, както и комуникацията между Model и View сe базират на **ReactiveX observables**. Да се използва **RxJava2-Android**.
+
+
+## Изисквания и препоръки
+
+* Всички задачи се предават като линк към github проект
+* Кодът да следва Android style guidelines (https://google.github.io/styleguide/javaguide.html)
+* Към проектите да бъдат включени тестове (unit и функционални). Espresso (https://developer.android.com/training/testing/espresso/index.html)
+* Кодът ще бъде проверяван за плагиатсво
+* Използването на Dependency injection (Dagger2 - https://github.com/google/dagger) и View bindings (Butter knife - http://jakewharton.github.io/butterknife/) ще се поощрява
+* Препоръчва се използването на Java 8 (вместо базовия Java 6) синтаксис и механизми : lambdas, method references, type annotations и т.н.
+
