@@ -42,7 +42,7 @@
 
 **4.B** Нека първото activity е изградено от Fab бутон и линеен лейаут (**linear layout**). Нека при натискането на Fab бутона от потребителя към layout-а се прибавя нов бутон (Button X, където X е поредността на бутона). Нека при натискането на всеки един бутон се показва *AlertDialog* с текст “Button X clicked” и действие OK, което затваря диалога.
 
-**4.C** Нека второто активити съдържа TextEdit и TextView. Нека да се имплементира TextWatcher (*hint: textEdit.addTextChangedListener() *), така че всяка промяна на стойността на TextEdit полето веднага да бъде отразявана в TextView елемента (*hint: onTextChanged()*). 
+**4.C** Нека второто активити съдържа TextEdit и TextView. Нека да се имплементира TextWatcher (*hint: textEdit.addTextChangedListener() *), така че всяка промяна на стойността на TextEdit полето веднага да бъде отразявана в TextView елемента (*hint:* onTextChanged()). 
 
 *Bonus:* нека всички OnXXXListeners се заменят с Java 8 lambda functions. 
 
