@@ -30,6 +30,15 @@
    * Нека бутонът *Return* връща като резултат стойността NumberResult.
    * Нека бутонът *Finish* финишира второто активити. 
    * Нека всички изпълнени команди (включая startActivityForResult и резултата) се логват с подходящ текст в *logTextView* и в *logcat*.
+   
+### 4. Събития (Event listeners). Navigation drawer menu. 
+Да се създаде приложение със странична *Navigation drawer* навигация. Нека приложението има две activity-та, като в navigation drawer менюто има връзки към двете активитита (*hint: иползвайте базов активити клас за обработката на onOptionsItemSelected*).
+
+Нека първото activity е изградено от Fab бутон и линеен лейаут (**linear layout**). Нека при натискането на Fab бутона от потребителя към layout-а се прибавя нов бутон (Button X, където X е поредността на бутона). Нека при натискането на всеки един бутон се показва *AlertDialog* с текст “Button X clicked” и действие OK, което затваря диалога.
+
+Нека второто активити съдържа TextEdit и TextView. Нека да се имплементира TextWatcher (*hint: textEdit.addTextChangedListener() *), така че всяка промяна на стойността на TextEdit полето веднага да бъде отразявана в TextView елемента (*hint: onTextChanged()*). 
+
+*Bonus: нека всички OnXXXListeners се заменят с Java 8 lambda functions. 
 
 ## Курсови задачи
 
