@@ -27,7 +27,9 @@
 ---
    
 ### 4. Събития (Event listeners). Navigation drawer menu. 
-**4.A** Да се създаде приложение със странична **Navigation drawer** навигация. Нека приложението има две activity-та, като в navigation drawer менюто има връзки към двете активитита (*hint:* иползвайте базов активити клас за обработката на onOptionsItemSelected).
+**4.A** Да се създаде приложение със странична **Navigation drawer** навигация. Нека приложението има две activity-та, като в navigation drawer менюто има връзки към двете активитита (*hint:* създайте базов абстрактен клас BaseActivity за обработката на onOptionsItemSelected, нека всички активити класове го наследяват).
+
+![drawer](https://github.com/tllw/pmiu/blob/master/exercise4/drawer.png)
 
 **4.B** Нека първото activity е изградено от Fab бутон и линеен лейаут (**linear layout**). Нека при натискането на Fab бутона от потребителя към layout-а се прибавя нов бутон (Button X, където X е поредността на бутона). Нека при натискането на всеки един бутон се показва *AlertDialog* с текст “Button X clicked” и действие OK, което затваря диалога.
 
