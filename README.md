@@ -96,8 +96,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
      private final List<String> fragmentTitleList = new ArrayList<>();
    
      public void addFragment(Fragment fragment, String title) {
-         fragmentList.add(fragment);
-         fragmentTitleList.add(title);
+         // Допиши ме
      }
      
      @Override
@@ -112,7 +111,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
      
      @Override
      public CharSequence getPageTitle(int position) {
-         return fragmentTitleList.get(position);
+         // Допиши ме
      }
 ```
 
