@@ -109,6 +109,11 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
      public int getCount() {
          // Допиши ме
      }
+     
+     @Override
+     public CharSequence getPageTitle(int position) {
+         return fragmentTitleList.get(position);
+     }
 ```
 
 *Bonus*: Да се предава втори параметър линк към картинка, която с помощта на Picasso да се визуализира под текста във всяка инстанция на фрагмент. 
