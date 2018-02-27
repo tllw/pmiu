@@ -37,6 +37,8 @@
 
 *Bonus:* нека всички OnXXXListeners се заменят с Java 8 lambda functions. 
 
+---
+
 ### 5. Fragments. ViewPager, ViewPagerAdapter. 
 
 Целта на днешното упражнение е да се запознаем с Fragments и с няколко компонента на Material design на Google. За целта ще създадем приложение от едно активити с Tab базирана навигация (https://material.io/guidelines/components/tabs.html#tabs-usage).
