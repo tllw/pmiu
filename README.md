@@ -50,21 +50,6 @@
 ```
 compile 'com.android.support:design:26.1.0'
 ```
-
-Нека се погрижим и за инициализацията и инстанцирането на Toolbar : 
-
-```java
-   toolbar = (Toolbar) findViewById(R.id.toolbar);
-   setSupportActionBar(toolbar);
-   getSupportActionBar().setDisplayHomeAsUpEnabled(true);       
-```
-
-Като не забравяме да зададем нужния стил на toolbar-a в styles.xml на приложението : 
-
-```xml
-<item name="windowNoTitle">true</item>
-````
-
 За целта ще създадем **Fragment** с подходящо име, който ще приема за параметър String и ще го извежда в TextView (илюстрацията по горе). Създайте getInstance() метод за разпектиране на параметъра и връщане на нова инстанция на фрагмента. А за инстанцирането на TextView компонента използвайте следния код, като обърнете специално внимание на поредността на изпълнение:
 
 ```java
@@ -79,6 +64,20 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 ```
 
 За реализация на slide-ването между отделните фрагменти и за добре изглеждаща и плавна анимация ще използваме ViewPager от Android support библиотеката (https://developer.android.com/training/animation/screen-slide.html).
+
+Нека се погрижим и за инициализацията и инстанцирането на Toolbar : 
+
+```java
+   toolbar = (Toolbar) findViewById(R.id.toolbar);
+   setSupportActionBar(toolbar);
+   getSupportActionBar().setDisplayHomeAsUpEnabled(true);       
+```
+
+Като не забравяме да зададем нужния стил на toolbar-a в styles.xml на приложението : 
+
+```xml
+<item name="windowNoTitle">true</item>
+````
 
 Ще трябва да създадем **ViewPagerAdapter extends FragmentPagerAdapter**, който ще съхранява рефенции към 3-те инстанции на нашия фрагмент.  След това ще трябва да се погрижем за създаването на нова инстанция на *ViewPagerAdapter*, подаването на трите Fragment инстанции (изполвайте getInstance()) към нея. И подаването на *ViewPagerAdapter-а* към *ViewPager-а*. 
 
