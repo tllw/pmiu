@@ -50,7 +50,7 @@
 ```
 compile 'com.android.support:design:26.1.0'
 ```
-За целта ще създадем **Fragment** с подходящо име, който ще приема за параметър String и ще го извежда в TextView (илюстрацията по горе). Създайте getInstance() метод за разпектиране на параметъра и връщане на нова инстанция на фрагмента. А за инстанцирането на TextView компонента използвайте следния код, като обърнете специално внимание на поредността на изпълнение:
+За целта ще създадем **Fragment** с подходящо име, който ще приема за параметър String и ще го извежда в TextView (илюстрацията по горе). Създайте newInstance() метод за разпектиране на параметъра и връщане на нова инстанция на фрагмента. А за инстанцирането на TextView компонента използвайте следния код, като обърнете специално внимание на поредността на изпълнение:
 
 ```java
 @Override
@@ -79,7 +79,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 <item name="windowNoTitle">true</item>
 ````
 
-Ще трябва да създадем **ViewPagerAdapter extends FragmentPagerAdapter**, който ще съхранява рефенции към 3-те инстанции на нашия фрагмент.  След това ще трябва да се погрижем за създаването на нова инстанция на *ViewPagerAdapter*, подаването на трите Fragment инстанции (изполвайте getInstance()) към нея. И подаването на *ViewPagerAdapter-а* към *ViewPager-а*. 
+Ще трябва да създадем **ViewPagerAdapter extends FragmentPagerAdapter**, който ще съхранява рефенции към 3-те инстанции на нашия фрагмент.  След това ще трябва да се погрижем за създаването на нова инстанция на *ViewPagerAdapter*, подаването на трите Fragment инстанции (изполвайте newInstance()) към нея. И подаването на *ViewPagerAdapter-а* към *ViewPager-а*. 
 
 ```java
     private ViewPager viewPager;
