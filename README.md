@@ -62,6 +62,12 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 
 Ще трябва да създадем **ViewPagerAdapter extends FragmentPagerAdapter**, който ще съхранява рефенции към 3-те инстанции на нашия фрагмент.  След това ще трябва да се погрижем за създаването на нова инстанция на *ViewPagerAdapter*, подаването на трите Fragment инстанции (изполвайте getInstance()) към нея. И подаването на *ViewPagerAdapter-а* към *ViewPager-а*. 
 
+```java
+    private ViewPager viewPager;
+    private TabLayout tabLayout;
+    private Toolbar toolbar;
+```
+
 На този линк ще намерите примерен layout на MainActivity: https://gist.github.com/tllw/dc30856b3b6f9046d5405b346fb76ba0
 
 *Bonus*: Да се предава втори параметър линк към картинка, която с помощта на Picasso да се визуализира под текста във всяка инстанция на фрагмент. 
