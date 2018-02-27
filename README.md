@@ -51,6 +51,20 @@
 compile 'com.android.support:design:26.1.0'
 ```
 
+Нека се погрижим и за инициализацията и инстанцирането на Toolbar : 
+
+```java
+   toolbar = (Toolbar) findViewById(R.id.toolbar);
+   setSupportActionBar(toolbar);
+   getSupportActionBar().setDisplayHomeAsUpEnabled(true);       
+```
+
+Като не забравяме да зададем нужния стил на toolbar-a в styles.xml на приложението : 
+
+```xml
+<item name="windowNoTitle">true</item>
+````
+
 За целта ще създадем **Fragment** с подходящо име, който ще приема за параметър String и ще го извежда в TextView (илюстрацията по горе). Създайте getInstance() метод за разпектиране на параметъра и връщане на нова инстанция на фрагмента. А за инстанцирането на TextView компонента използвайте следния код, като обърнете специално внимание на поредността на изпълнение:
 
 ```java
