@@ -37,6 +37,34 @@
 
 *Bonus:* нека всички OnXXXListeners се заменят с Java 8 lambda functions. 
 
+### 5. Fragments. ViewPager, ViewPagerAdapter. 
+
+Целта на днешното упражнение е да се запознаем с Fragments и с няколко компонента на Material design на Google. За целта ще създадем приложение от едно активити с Tab базирана навигация (https://material.io/guidelines/components/tabs.html#tabs-usage).
+
+![tabs](https://github.com/tllw/pmiu/blob/master/exercise5/tabs.png)
+
+За целта ще създадем **Fragment** с подходящо име, който ще приема за параметър String и ще го извежда в TextView (илюстрацията по горе). Използвайте getInstance() за приемане на параметъра. А за инстанцирането на TextView компонента използвайте следния код, като обърнете специално внимание на поредността на изпълнение:
+
+```java
+@Override
+public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                         Bundle savedInstanceState) {
+    // Inflate the layout for this fragment
+    View layout = inflater.inflate(R.layout.fragment_nav, container, false);
+    textView  = layout.findViewById(R.id.fragmentTextView);
+    return layout;
+}
+```
+
+За реализация на slide-ването между отделните фрагменти и за добре изглеждаща и плавна анимация ще използваме ViewPager от Android support библиотеката (https://developer.android.com/training/animation/screen-slide.html).
+
+Ще трябва да създадем **ViewPagerAdapter extends FragmentPagerAdapter**, който ще съхранява рефенции към 3-те инстанции на нашия фрагмент.  След това ще трябва да се погрижем за създаването на нова инстанция на *ViewPagerAdapter*, подаването на трите Fragment инстанции (изполвайте getInstance()) към нея. И подаването на *ViewPagerAdapter-а* към *ViewPager-а*. 
+
+На този линк ще намерите примерен layout на MainActivity: https://gist.github.com/tllw/dc30856b3b6f9046d5405b346fb76ba0
+
+*Bonus*: Да се предава втори параметър линк към картинка, която с помощта на Picasso да се визуализира под текста във всяка инстанция на фрагмент. 
+
+
 # Курсови задачи
 
 1.	Да се реализира приложение "Прогноза за времето", което при въведена локация да визуализира в подходящ стил прогноза на времето. Програмата да действа като асинхронен **REST** клиент на HTTP API. За реализация на заявките и десериализация на JSON да се използва **Retrofit** (https://github.com/square/retrofit). 
