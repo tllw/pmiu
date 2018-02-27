@@ -89,6 +89,18 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 
 На този линк ще намерите примерен layout на MainActivity: https://gist.github.com/tllw/dc30856b3b6f9046d5405b346fb76ba0
 
+Нека добавим следната функционалност към новосъздадения ViewPagerAdapter: 
+
+```java
+     private final List<Fragment>fragmentList = new ArrayList<>();
+     private final List<String> fragmentTitleList = new ArrayList<>();
+   
+     public void addFragment(Fragment fragment, String title) {
+         fragmentList.add(fragment);
+         fragmentTitleList.add(title);
+     }
+```
+
 *Bonus*: Да се предава втори параметър линк към картинка, която с помощта на Picasso да се визуализира под текста във всяка инстанция на фрагмент. 
 
 
