@@ -45,7 +45,7 @@
 
 ![tabs](https://github.com/tllw/pmiu/blob/master/exercise5/tabs.png)
 
-Нека използваме gradle, който да включи нужната библиотека към настоящия проект: 
+Нека добавим в  gradle нужната библиотека: 
 
 ```
 compile 'com.android.support:design:26.1.0'
