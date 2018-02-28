@@ -79,7 +79,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 <item name="windowNoTitle">true</item>
 ````
 
-Ще трябва да създадем **ViewPagerAdapter extends FragmentPagerAdapter**, който ще съхранява рефенции към 3-те инстанции на нашия фрагмент.  След това ще трябва да се погрижем за създаването на нова инстанция на *ViewPagerAdapter*, подаването на трите Fragment инстанции (изполвайте newInstance()) към нея. И подаването на *ViewPagerAdapter-а* към *ViewPager-а*. 
+Ще трябва да създадем **ViewPagerAdapter extends FragmentPagerAdapter**, който ще съхранява рефенции инстанциите на нашия фрагмент, като имплементира методите наследени от FragmentPagerAdapter.  След това ще трябва да се погрижем за създаването на нова инстанция на *ViewPagerAdapter*, подаването на трите Fragment инстанции (изполвайте newInstance()) към нея. И подаването на *ViewPagerAdapter-а* към *ViewPager-а*. 
 
 ```java
     private ViewPager viewPager;
