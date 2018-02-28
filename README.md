@@ -89,9 +89,11 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 
 На този линк ще намерите примерен layout на MainActivity: https://gist.github.com/tllw/dc30856b3b6f9046d5405b346fb76ba0
 
-Нека добавим следната функционалност към новосъздадения ViewPagerAdapter: 
+Нека добавим следната функционалност към новосъздадения : 
 
 ```java
+     // ViewPagerAdapter
+
      private final List<Fragment>fragmentList = new ArrayList<>();
      private final List<String> fragmentTitleList = new ArrayList<>();
    
