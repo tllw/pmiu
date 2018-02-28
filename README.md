@@ -79,42 +79,45 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 <item name="windowNoTitle">true</item>
 ````
 
-Ще трябва да създадем **ViewPagerAdapter extends FragmentPagerAdapter**, който ще съхранява рефенции инстанциите на нашия фрагмент, като имплементира методите наследени от FragmentPagerAdapter.  След това ще трябва да се погрижем за създаването на нова инстанция на *ViewPagerAdapter*, подаването на трите Fragment инстанции (изполвайте newInstance()) към нея. И подаването на *ViewPagerAdapter-а* към *ViewPager-а*. 
+На този линк ще намерите примерен **layout** на MainActivity: https://gist.github.com/tllw/dc30856b3b6f9046d5405b346fb76ba0
+
+Ще трябва да създадем **ViewPagerAdapter extends FragmentPagerAdapter**, който ще съхранява рефенции инстанциите на нашия фрагмент, като имплементира методите наследени от FragmentPagerAdapter. 
+
+Нека добавим следната функционалност към новосъздадения клас: 
+
+```java
+     class ViewPagerAdapter extends FragmentPagerAdapter {
+
+        private final List<Fragment>fragmentList = new ArrayList<>();
+        private final List<String> fragmentTitleList = new ArrayList<>();
+
+        public void addFragment(Fragment fragment, String title) {
+            // Допиши ме
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            // Допиши ме
+        }
+
+        @Override
+        public int getCount() {
+            // Допиши ме
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            // Допиши ме
+        }
+     }
+```
+
+След това ще трябва да се погрижем за създаването на нова инстанция на *ViewPagerAdapter*, подаването на трите Fragment инстанции (изполвайте newInstance()) към нея. И подаването на *ViewPagerAdapter-а* към *ViewPager-а*. 
 
 ```java
     private ViewPager viewPager;
     private TabLayout tabLayout;
     private Toolbar toolbar;
-```
-
-На този линк ще намерите примерен layout на MainActivity: https://gist.github.com/tllw/dc30856b3b6f9046d5405b346fb76ba0
-
-Нека добавим следната функционалност към новосъздадения : 
-
-```java
-     // ViewPagerAdapter
-
-     private final List<Fragment>fragmentList = new ArrayList<>();
-     private final List<String> fragmentTitleList = new ArrayList<>();
-   
-     public void addFragment(Fragment fragment, String title) {
-         // Допиши ме
-     }
-     
-     @Override
-     public Fragment getItem(int position) {
-         // Допиши ме
-     }
-
-     @Override
-     public int getCount() {
-         // Допиши ме
-     }
-     
-     @Override
-     public CharSequence getPageTitle(int position) {
-         // Допиши ме
-     }
 ```
 
 *Bonus*: Да се предава втори параметър линк към картинка, която с помощта на Picasso да се визуализира под текста във всяка инстанция на фрагмент. 
