@@ -45,7 +45,9 @@
 
 ![tabs](https://github.com/tllw/pmiu/blob/master/exercise5/tabs.png)
 
-Нека добавим в  gradle нужната библиотека: 
+Както е илюстрирано по-горе, нашето приложение ще трябва да създаде няколко инстанции на Fragment, всяка от които ще бъде активна на екрана при избирането на съответстващият и tab. За да постигнем това, ще използваме ViewPager, TabLayout и ще създадем FragmentPagerAdapter.
+
+Нека първо добавим в  gradle нужната библиотека: 
 
 ```
 compile 'com.android.support:design:26.1.0'
