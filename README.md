@@ -115,6 +115,8 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 След това ще трябва да се погрижем за създаването на нова инстанция на *ViewPagerAdapter*, подаването на трите Fragment инстанции (изполвайте newInstance()) към нея. И подаването на *ViewPagerAdapter-а* към *ViewPager-а*. 
 
 ```java
+   // MainActivity
+   
     private ViewPager viewPager;
     private TabLayout tabLayout;
     private Toolbar toolbar;
