@@ -65,14 +65,6 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 
 За реализация на slide-ването между отделните фрагменти и за добре изглеждаща и плавна анимация ще използваме ViewPager от Android support библиотеката (https://developer.android.com/training/animation/screen-slide.html).
 
-Нека се погрижим и за инициализацията и инстанцирането на Toolbar : 
-
-```java
-   toolbar = (Toolbar) findViewById(R.id.toolbar);
-   setSupportActionBar(toolbar);
-   getSupportActionBar().setDisplayHomeAsUpEnabled(true);       
-```
-
 Като не забравяме да зададем нужния стил на toolbar-a в styles.xml на приложението : 
 
 ```xml
@@ -81,7 +73,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 
 На този линк ще намерите примерен **layout** на MainActivity: https://gist.github.com/tllw/dc30856b3b6f9046d5405b346fb76ba0
 
-Ще трябва да създадем **ViewPagerAdapter extends FragmentPagerAdapter**, който ще съхранява рефенции инстанциите на нашия фрагмент, като имплементира методите наследени от FragmentPagerAdapter. 
+Ще трябва да създадем **ViewPagerAdapter extends FragmentPagerAdapter**, който ще съхранява рефенции инстанциите на нашия фрагмент, като имплементира методите наследени от FragmentPagerAdapter. Ще използваме ArrayList за съхрнанение на инстанциите.
 
 Нека добавим следната функционалност към новосъздадения клас: 
 
@@ -112,15 +104,34 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
      }
 ```
 
-След това ще трябва да се погрижем за създаването на нова инстанция на *ViewPagerAdapter*, подаването на трите Fragment инстанции (изполвайте newInstance()) към нея. И подаването на *ViewPagerAdapter-а* към *ViewPager-а*. 
+Нека се върнем в MainActivity:
 
 ```java
-   // MainActivity
+    // MainActivity
    
     private ViewPager viewPager;
     private TabLayout tabLayout;
     private Toolbar toolbar;
+    
+    // инстанцирайте чрез findViewById()
 ```
+
+След това ще трябва да се погрижем за създаването на инстанция на *ViewPagerAdapter*. И за инициализирането на ViewPager и tabLayout:
+
+```java 
+   ViewPagerAdapter adapter = // Допиши ме
+   viewPager.setAdapter(adapter);
+   tabLayout.setupWithViewPager(viewPager);
+```
+
+Нека се погрижим и за инициализацията и инстанцирането на Toolbar : 
+
+```java
+   toolbar = (Toolbar) findViewById(R.id.toolbar);
+   setSupportActionBar(toolbar);
+   getSupportActionBar().setDisplayHomeAsUpEnabled(true);       
+```
+
 
 *Bonus*: Да се предава втори параметър линк към картинка, която с помощта на Picasso да се визуализира под текста във всяка инстанция на фрагмент. 
 
