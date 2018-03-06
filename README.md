@@ -157,6 +157,12 @@ Activity, което съдържа 2 FrameLayouts и 3 бутона. Със с�
 -	Button Transfer (transfer Fragment Instance from frame 1 to frame 2) – да се премахне последната инстанция на фрагмент от frame1, като същата се добави към frame2. Да се проверява има ли изобщо добавени фрагменти във frame 1.
 -	Button Remove (remove Fragment Instance from frame 2) - премахва най-горната инстанция на фрагмент от frame2.
 
+```java
+   // set hex formated string from rgba Integer
+   textView.setText( String.format("#%06X", (0xFFFFFF & color)) );
+
+```java
+
 ---
 
 # Курсови задачи
