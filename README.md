@@ -158,9 +158,12 @@ Activity, което съдържа 2 FrameLayouts и 3 бутона. Със с�
 -	Button Remove (remove Fragment Instance from frame 2) - премахва най-горната инстанция на фрагмент от frame2.
 
 ```java
+   // Generate random color
+   Random rnd = new Random();
+   Integer color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+
    // set hex formated string from rgba Integer
    textView.setText( String.format("#%06X", (0xFFFFFF & color)) );
-
 ```
 
 ---
