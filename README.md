@@ -143,7 +143,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 
 ---
 
-### 5. Fragments. FragmentTransaction. FragmentManager. 
+### 6. Fragments. FragmentTransaction. FragmentManager. 
 
 Целта на настоящото упражнение е да се запознаем изначално с lifecycle на Fragment. Както и с функционалностите на FragmentTransaction и 
 FragmentManager, позволяващи ни инстанцирането, премахването и др. операции свързани с фрагменти.
