@@ -161,7 +161,7 @@ Activity, което съдържа 2 FrameLayouts и 3 бутона. Със с�
    // set hex formated string from rgba Integer
    textView.setText( String.format("#%06X", (0xFFFFFF & color)) );
 
-```java
+```
 
 ---
 
