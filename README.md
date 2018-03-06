@@ -141,6 +141,24 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 
 ![bonus2](https://camo.githubusercontent.com/35547108c5495ce4e90c8a4492807063ebabf5f4/687474703a2f2f692e737461636b2e696d6775722e636f6d2f64646d316a2e6a7067)
 
+---
+
+### 5. Fragments. FragmentTransaction. FragmentManager. 
+
+Целта на настоящото упражнение е да се запознаем изначално с lifecycle на Fragment. Както и с функционалностите на FragmentTransaction и 
+FragmentManager, позволяващи ни инстанцирането, премахването и др. операции свързани с фрагменти.
+
+Да се създаде **ColorFragment**, който приема един параметър – Integer (argb) цвят и го изобразява по подходящ начин: 
+
+![fragments](https://github.com/tllw/pmiu/blob/master/exercise6/fragments.png)
+
+Activity, което съдържа 2 FrameLayouts и 3 бутона. Със следните функционалности:
+-	Button Add (add new ColorFragment Instance to frame 1) – добавя нова инстанция на фрагмента към frame 1, новата инстанция да се инстанцира със случаен цвят.
+-	Button Transfer (transfer Fragment Instance from frame 1 to frame 2) – трансферира последната инстанция на фрагмент от frame1 към frame2. Да се проверява има ли такава.
+-	Button Remove (remove Fragment Instance from frame 2) - премахва най-горната инстанция на фрагмент от frame2.
+
+---
+
 # Курсови задачи
 
 1.	Да се реализира приложение "Прогноза за времето", което при въведена локация да визуализира в подходящ стил прогноза на времето. Програмата да действа като асинхронен **REST** клиент на HTTP API. За реализация на заявките и десериализация на JSON да се използва **Retrofit** (https://github.com/square/retrofit). 
