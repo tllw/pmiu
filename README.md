@@ -180,6 +180,8 @@ Activity, което съдържа 2 FrameLayouts и 3 бутона. Със с�
 
 ![fragments](https://github.com/tllw/pmiu/blob/master/exercise7/tablet.png)
 
+4. Създайте drawable gradient ресурс и го приложете на ImageView-то в горния layout. Нека цветовете на gradienta са различни при horizontal и vertical ориентация на устройството.
+
 *Bonus* Създайте constraint layout, следвайки стъпките описани в : https://codelabs.developers.google.com/codelabs/constraint-layout/
 
 ---
