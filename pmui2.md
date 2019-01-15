@@ -5,7 +5,7 @@
    
 ---
 
-### 2. Андроид activity клас, намерения (Intent-и). Предаване на параметри чрез намерения.
+### 2. Андроид activity клас, намерения (Intent-и). Предаване на параметри чрез намерения. lay
 Да се реализира приложение, в което в първо activity се въвежда информация за PhoneBookEntry (name, phone, type). Създава се PhoneBookEntry, което сериализирано се подава чрез intent на второ activity. Второто activity визуализира PhoneBookEntry-то. *Bonus:* Да се имплементира Parcelable interface, който да се използва в intenta, вместо сериализация.
 
 ---
