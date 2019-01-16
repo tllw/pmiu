@@ -16,11 +16,11 @@
 
 ---
 
-### 8+9.  Fragments. FragmentManger, etc.
+### 8+9.  Fragments. FragmentManager, etc.
 
 ---
 
-### 10+11. Асинхронна обработка на данни. AsyncTask. Handler. UI Thread.
+### 10+11. Асинхронна обработка на данни. AsyncTask. Handler. Runnables. UI thread.
 
 ---
 
