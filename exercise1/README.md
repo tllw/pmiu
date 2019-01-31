@@ -41,7 +41,7 @@ https://developer.android.com/studio/
 ![Android_Studio_NewProject_Screen_1.PNG](https://github.com/theVelislavKolesnichenko/AndroidBasics/blob/master/Wiki/Images/Android_SDK_Manager_1.PNG)
 - От AMD Manager отворете виртуалното устройство в режим за редактиране където изключете Use Host GPU и включете Snapshot, по този начин устройството ще се стартира от изображение вместо да се изпълнява всеки път при стартиране.
 
-# Структора на проект
+# Структура на проект
 Проектите в Android Studio използва Gradle за изграждане на приложенията. В Gradle скрипта се оказват минималната и целевата версия на Android за които се разработва програмата. Зависимите библиотеки към приложението.
 
 ![Android_Gradel_Scrip](https://github.com/theVelislavKolesnichenko/AndroidBasics/blob/master/Wiki/Images/Android_Gradel_Script.PNG)
