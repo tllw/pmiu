@@ -13,15 +13,3 @@
 * onStop() - Извиква се след като Activity вече не е видимо.
 * onSaveInstanceState() - Служи за съхранение на състоянието на Activity преди то да стане невидимо
 * onRestoreInstanceState() - Служи за възстановяване състоянието на Activity записано при извиване на onSaveInstanceState()
-
----
-
-# Задача:
-
-* Създайте абстрактен клас BaseActivity, който има защитено свойство TextView logTextView и наследява AppCompatActivity като замени всички методи от жизнения цикъл на Activity като попълва информация за извикването им в Logcat и logTextView. 
-* Създайте MainActivity с бутон "Start Second Activity" и TextView с опция за вертикално скролиране.
-* Създайте SecondActivity с EditText за попълване на числа, бутони "Return" и "Finish", и TextView с опция за вертикално скролиране.
-* MainActivity и SecondActivity трябва наследяват BaseActivity и да инстанцират свойството TextView.
-* Бутонът "Start Second Activity" да стартира SecondActivity и да се логва съобщение описващо действието.
-* Бутонът "Return" логва стойноста от "Return" от EditText с подходящ текст.
-* Бутонът "Finish" финализира SecondActivity и логва подходящо съобщение.
