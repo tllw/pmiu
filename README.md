@@ -16,6 +16,21 @@
 
 ---
 
+### 3. Lifecycle на андроид activity. Стартиране на активити за резултат. Използване на log и debug-ер. 
+Да се създаде абстрактен клас **BaseActivity**, с protected член TextView **logTextView**. Нека BaseActivity наследи (Override) всички lifecycle методите на Activity (onStart(), onResume(), etc) и за всеки от тях логва текущата команда едновременно в logcat(Log.d) и в logTextView (hint: използвайте append()).
+
+Да се създадат две активитита **MainActivity** и **SecondActivity**, които наследяват BaseActivity (hint: погрижете се за инстанцирането на logTextView и разрешето скролирането му – *android:scrollbars = "vertical"*). Създайте аналогични lifecycle методи и за двете (hint: не забравяйте super call). 
+
+**Да се създадат следните *layouts* съответно за MainActivity и SecondActivity.**
+
+   ![layouts](https://github.com/tllw/pmiu/blob/master/exercise3/activities.png)
+   
+   * Нека бутонът *Start Second For Result* стартира второто активити за резултат.
+   * Нека бутонът *Return* връща като резултат стойността NumberResult.
+   * Нека бутонът *Finish* финишира второто активити. 
+   * Нека всички изпълнени команди (включая startActivityForResult и резултата) се логват с подходящ текст в *logTextView* и в *logcat*.
+   
+---   
 ### 3+4. Lifecycle - Events - Callbacks
 
 ---
