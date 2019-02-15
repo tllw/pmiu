@@ -21,6 +21,8 @@
 
 Да се създадат две активитита **MainActivity** и **SecondActivity**, които наследяват BaseActivity (hint: погрижете се за инстанцирането на logTextView и разрешето скролирането му – *android:scrollbars = "vertical"*). Създайте аналогични lifecycle методи и за двете (hint: не забравяйте super call). 
 
+Допълнителна информация относно lifecycle - https://github.com/tllw/pmiu/tree/master/exercise3
+
 **Да се създадат следните *layouts* съответно за MainActivity и SecondActivity.**
 
    ![layouts](https://github.com/tllw/pmiu/blob/master/exercise3/activities.png)
