@@ -14,8 +14,9 @@
 * onSaveInstanceState() - Служи за съхранение на състоянието на Activity преди то да стане невидимо
 * onRestoreInstanceState() - Служи за възстановяване състоянието на Activity записано при извиване на onSaveInstanceState()
 
-* Задачи:
 ---
+
+# Задача:
 
 * Създайте абстрактен клас BaseActivity, който има защитено свойство TextView logTextView и наследява AppCompatActivity като замени всички методи от жизнения цикъл на Activity като попълва информация за извикването им в Logcat и logTextView. 
 * Създайте MainActivity с бутон "Start Second Activity" и TextView с опция за вертикално скролиране.
