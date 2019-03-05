@@ -43,6 +43,7 @@
 **4.C** Нека второто activity съдържа TextEdit и TextView компоненти. Нека се имплементира TextWatcher (*hint:* textEdit.addTextChangedListener() ), така че всяка промяна на стойността на TextEdit полето веднага да бъде отразявана в TextView елемента (*hint:* onTextChanged()). 
 
 *Bonus:* нека всички OnXXXListeners се заменят с Java 8 lambda functions. 
+
 ---
    
 ### 5+6. Adapter + Adapter use cases (ViewPager, List, etc). RecycleView
