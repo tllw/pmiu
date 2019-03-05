@@ -33,8 +33,16 @@
    * Нека всички изпълнени команди (включая startActivityForResult и резултата) се логват с подходящ текст в *logTextView* и в *logcat*.
    
 ---   
-### 3+4. Lifecycle - Events - Callbacks
+### 4. Събития (Event listeners). Navigation drawer menu. 
+**4.A** Да се създаде приложение със странична **Navigation drawer** навигация. Нека приложението има две activity-та, като в navigation drawer менюто има връзки към двете активитита (*hint:* създайте базов абстрактен клас BaseActivity за обработката на onOptionsItemSelected, нека всички активити класове го наследяват).
 
+![drawer](https://github.com/tllw/pmiu/blob/master/exercise4/drawer.png)
+
+**4.B** Нека първото activity е изградено от Fab бутон и линеен лейаут (**linear layout**). Нека при натискането на Fab бутона от потребителя към layout-а се прибавя нов бутон (Button X, където X е поредността на бутона). Нека при натискането на всеки един бутон се показва *AlertDialog* с текст “Button X clicked” и действие OK, което затваря диалога.
+
+**4.C** Нека второто activity съдържа TextEdit и TextView компоненти. Нека се имплементира TextWatcher (*hint:* textEdit.addTextChangedListener() ), така че всяка промяна на стойността на TextEdit полето веднага да бъде отразявана в TextView елемента (*hint:* onTextChanged()). 
+
+*Bonus:* нека всички OnXXXListeners се заменят с Java 8 lambda functions. 
 ---
    
 ### 5+6. Adapter + Adapter use cases (ViewPager, List, etc). RecycleView
