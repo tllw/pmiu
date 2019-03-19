@@ -48,6 +48,17 @@
    
 ### 5+6. Adapter + Adapter use cases (ViewPager, List, etc). RecycleView
 
+ListView. ListView Adapter.
+
+Да се създаде активити със следната функционалост:
+
+![listview](https://github.com/tllw/pmiu/blob/master/exercise9/listview.png)
+
+Да се разработи даннов клас Course с подходящи гетери и конструктор.
+Като се използват ListView и Adapter да се реализира ListView на предварително зададена колекция от Course-s (дефинирано в подходящ клас - CoursesFixtureGenerator).
+
+При single click на list view item да се реализира контекстно меню позволяващо въвеждане на оценка по избрания Course.
+
 ---
 
 ### 8+9.  Fragments. FragmentManager, etc.
