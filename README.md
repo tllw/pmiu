@@ -62,6 +62,8 @@ ListView. ListView Adapter.
 **6. RecyclerView, CardView** Да се разработи activity, което изобразява Колекция от потребители (снимка, имена, пол) с помомощта на RecyclerView и CardView. Да се добави FAB бутон, който с подходящ диалог (или второ activity) позволява добавянето на нови потребители към колекцията.
 Да се добави бутон, който сортира колекцията по азбучен ред.
 
+![cardview](https://i.stack.imgur.com/XkObY.png)
+
 ---
 
 ### 8+9.  Fragments. FragmentManager, etc.
